@@ -24,8 +24,6 @@ async function testForm() {
         await emailInput.sendKeys('usuario@gmail.com');
         console.log("Email ingresado.");
         await sleep(2000); // Espera 2 segundos para ver el email escrito
-
-        
         // Ingresar texto en el área de mensaje
         let messageInput = await driver.findElement(By.id('textArea'));
         await messageInput.sendKeys('Este es un mensaje de prueba.');
