@@ -18,6 +18,7 @@ async function testForm() {
         console.log("Página cargada.");
         await sleep(2000); // Espera 2 segundos antes de interactuar
 
+        
         // Ingresar texto en el cuadro de email
         let emailInput = await driver.findElement(By.id('textBox'));
         await driver.executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", messageInput);
